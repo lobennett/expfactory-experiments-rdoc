@@ -1,3 +1,19 @@
+/* ************************************ */
+/* Roundtable Proof-of-Human — invisible bot/human classification (rt.js).
+   Injected here because expfactory assembles the page from config.json's
+   run-list (src-only script tags); this carries the required data-site-key
+   attribute and a per-task data-tags for dashboard filtering. */
+(function () {
+  if (window.__roundtableInjected) return;
+  window.__roundtableInjected = true;
+  var s = document.createElement("script");
+  s.src = "https://cdn.roundtable.ai/v1/rt.js";
+  s.setAttribute("data-site-key", "pub-2rS0iJL0dtTNoNyPTpvm");
+  s.setAttribute("data-tags", "operation_span_rdoc");
+  (document.head || document.documentElement).appendChild(s);
+})();
+/* ************************************ */
+
 const OG_CHEIN_SYMM_GRIDS = [
   [
     "black",
